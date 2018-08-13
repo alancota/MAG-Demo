@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity">
+
+    <ImageView
+        android:id="@+id/customerLogo2"
+        android:layout_width="151dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sempra_logo" />
+
+    <Button
+        android:id="@+id/btnStartMAG"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:onClick="startMAG"
+        android:text="Start MAG SDK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerLogo2" />
+
+    <Button
+        android:id="@+id/btnCallAPI"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        android:onClick="callAPI"
+        android:text="Call protected endpoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUserAuth" />
+
+    <Button
+        android:id="@+id/btnUserAuth"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        android:onClick="userAuth"
+        android:text="User Authentication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartMAG" />
+
+    <ScrollView
+        android:id="@+id/scrollViewLog"
+        android:layout_width="355dp"
+        android:layout_height="212dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/stroke_bg"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCallAPI">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtLog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="91dp"
+                tools:layout_editor_absoluteY="246dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnDeregister"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="deviceDereg"
+        android:text="Deregister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="16dp"
+        android:onClick="doLogout"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
