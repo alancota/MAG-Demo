@@ -34,10 +34,10 @@
       "client_custom": {},
       "client_ids": [
         {
-          "client_id": "0364e70f-3c53-4a02-8e97-5c2399db6a02",
+          "client_id": "743ed665-8cdc-4496-8d51-6deadde9679b",
           "client_secret": "",
           "scope": "openid address phone email profile user_role msso msso_register msso_client_register openid_client_registration",
-          "redirect_uri": "http://mag.apimca.com:8080/magdemo/android/",
+          "redirect_uri": "camsso://ca.com",
           "environment": "Android",
           "status": "ENABLED",
           "registered_by": "admin",
@@ -49,18 +49,18 @@
               "oauth_client": true,
               "response": {
                 "client_id": "0364e70f-3c53-4a02-8e97-5c2399db6a02",
-                "client_secret": "0364e70f-3c53-4a02-8e97-5c2399db6a02",
-                "client_secret_expires_at": "0",
-                "client_id_issued_at": 1534863595,
+                "client_secret": "743ed665-8cdc-4496-8d51-6deadde9679b",
+                "client_secret_expires_at": "",
+                "client_id_issued_at": 1534878166,
                 "registration_access_token": "",
                 "registration_client_uri": "",
                 "token_endpoint_auth_method": "client_secret_basic",
                 "token_endpoint_auth_signing_alg": "",
                 "application_type": "",
                 "redirect_uris": [
-                  "http://mag.apimca.com:8080/magdemo/"
+                  "camsso://ca.com"
                 ],
-                "client_name": "CA MAG Demo",
+                "client_name": "",
                 "subject_type": "pairwise",
                 "sector_identifier_uri": "",
                 "contacts": [],
@@ -68,10 +68,10 @@
                 "grant_types": [],
                 "id_token_signed_response_alg": "HS256",
                 "userinfo_signed_response_alg": "",
-                "environment": "Android iOS",
-                "organization": "CA Technologies",
+                "environment": "Android",
+                "organization": "",
                 "master": true,
-                "description": "Showcase the CA Mobile API Gateway",
+                "description": "",
                 "scope": "openid address phone email profile user_role msso msso_register msso_client_register openid_client_registration",
                 "jwks": "",
                 "jwks_uri": ""

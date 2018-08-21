@@ -56,6 +56,10 @@ public class DemoActivity extends AppCompatActivity {
         btnDeregister = (Button) findViewById(R.id.btnDeregister);
         txtLog = (TextView) findViewById(R.id.txtLog);
 
+        // ATTENTION: This was auto-generated to handle app links.
+        Intent appLinkIntent = getIntent();
+        String appLinkAction = appLinkIntent.getAction();
+        Uri appLinkData = appLinkIntent.getData();
     }
 
     //
